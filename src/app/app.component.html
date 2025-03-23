@@ -1,0 +1,4 @@
+<app-header (statusChanged)="onStatusChanged($event)"></app-header>
+<app-home *ngIf="isChildActive"></app-home>
+<app-stock *ngIf="!isChildActive"></app-stock>
+<app-footer *ngIf="!isChildActive"></app-footer>

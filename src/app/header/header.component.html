@@ -1,0 +1,7 @@
+<mat-toolbar class="toolbar">
+    <img src="..\assets\images\logo.png" class="logo" alt="Logo Mercadona" />
+    <span class="spacer"></span>
+    <button mat-flat-button class="toolbar__button" [disabled]="!isActive" (click)="toggleStatus()">
+        <span>{{ buttonText }}</span>
+    </button>
+</mat-toolbar>

@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    justify-content: center;
+    background-color: #f0f0f0;
+    height: calc(100vh - 70px);
+}
+
+.container__header {
+    margin: 50px;
+}
+
+.card-container {
+    height: 100px;
+    width: 300px;
+    background-color: #c5c5c5;
+}
+
+.container_card {
+    display: flex;
+    align-items: center;
+}
+
+.card__container__button {
+    text-align: center;
+}
+
+.card__container__button button {
+    background-color: green;
+}

@@ -1,0 +1,31 @@
+<h2 mat-dialog-title>Nuevo producto</h2>
+
+<form #itemForm="ngForm">
+
+    <mat-form-field class="input__total" appearance="outline">
+        <mat-label>Nombre</mat-label>
+        <input matInput name="name" [(ngModel)]="item.name">
+    </mat-form-field>
+
+    <mat-form-field class="input__middle" appearance="outline">
+        <mat-label>Precio</mat-label>
+        <input matInput name="price" [(ngModel)]="item.price" type="number" [step]="0.1" min="0">
+    </mat-form-field>
+
+    <mat-form-field class="input__middle" appearance="outline">
+        <mat-label>Formato</mat-label>
+        <input matInput name="format" [(ngModel)]="item.format">
+    </mat-form-field>
+
+    <mat-form-field class="input__total" appearance="outline">
+        <mat-label>Marca</mat-label>
+        <input matInput name="brand" [(ngModel)]="item.brand">
+    </mat-form-field>
+
+    <button mat-raised-button color="accent" class="submit-button" aria-label="login" (click)="cancel()">Cancelar
+    </button>
+
+    <button mat-raised-button color="accent" class="submit-button save__button" aria-label="login" (click)="save(item)">Guardar
+    </button>
+
+</form>

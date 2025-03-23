@@ -1,0 +1,28 @@
+.toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    border-bottom: 3px solid green; /* Borde verde en la parte superior */
+}
+
+
+.toolbar__button {
+    color: white;
+    background-color: grey;
+}
+
+.logo {
+    max-height: 50px;
+    object-fit: contain;
+}
+
+.spacer {
+    flex: 1 1 auto;
+}
+
+@media (max-width: 768px) {
+    .logo {
+        max-height: 40px;
+    }
+}
